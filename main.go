@@ -52,7 +52,7 @@ func main() {
 	router.POST("/users", postUser)
 	router.GET("/users/:id", getUserByID)
 
-	router.Run("localhost:8080")
+	router.Run("0.0.0.0:8080")
 }
 
 // getUsers responds with the list of all Users as JSON.
